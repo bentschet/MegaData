@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>60</y>
+      <w>380</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>IntNode
+-
+- nodeData : int
+- nodePointer : IntNode * 
+-
++ getNodeData() : int
++ getNodePointer() : intNode *
++ setNodeData(int value) : void
++ setNodePointer(IntNode * next) : void
+
++ IntNode() : constructor
++ IntNode(int value) : init
++ IntNode(int value, IntNode * nextNode): constructor</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>410</x>
+      <y>60</y>
+      <w>380</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>SimpleClass</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>10</x>
+      <y>10</y>
+      <w>140</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Created by Benbo
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
