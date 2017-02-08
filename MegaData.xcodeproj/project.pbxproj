@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E270ABD1E4910BC0063B226 /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E270ABB1E4910BC0063B226 /* IntNode.cpp */; };
+		5E4EB4D91E4BA951005B4E6F /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E4EB4D71E4BA951005B4E6F /* IntNodeArray.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +27,8 @@
 		5E270AAB1E4904570063B226 /* MegaData */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaData; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E270ABB1E4910BC0063B226 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Model/IntNode.cpp; sourceTree = SOURCE_ROOT; };
 		5E270ABC1E4910BC0063B226 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = SOURCE_ROOT; };
+		5E4EB4D71E4BA951005B4E6F /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNodeArray.cpp; path = ../Model/IntNodeArray.cpp; sourceTree = "<group>"; };
+		5E4EB4D81E4BA951005B4E6F /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNodeArray.hpp; path = ../Model/IntNodeArray.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +61,20 @@
 		5E270AAD1E4904570063B226 /* MegaData */ = {
 			isa = PBXGroup;
 			children = (
+				5E4EB4D61E4BA926005B4E6F /* Model */,
+			);
+			path = MegaData;
+			sourceTree = "<group>";
+		};
+		5E4EB4D61E4BA926005B4E6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E4EB4D71E4BA951005B4E6F /* IntNodeArray.cpp */,
+				5E4EB4D81E4BA951005B4E6F /* IntNodeArray.hpp */,
 				5E270ABB1E4910BC0063B226 /* IntNode.cpp */,
 				5E270ABC1E4910BC0063B226 /* IntNode.hpp */,
 			);
-			path = MegaData;
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E270ABD1E4910BC0063B226 /* IntNode.cpp in Sources */,
+				5E4EB4D91E4BA951005B4E6F /* IntNodeArray.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +262,7 @@
 				5E270AB41E4904570063B226 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
