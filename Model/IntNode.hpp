@@ -22,6 +22,8 @@ public:
      Creates an IntNode with a specified value and next node pointer
      */
     
+    IntNode(int value, IntNode * nextNode);
+    
     //Methods
     int getNodeData();
     IntNode * getNodePointer();
