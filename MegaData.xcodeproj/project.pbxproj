@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5E270ABD1E4910BC0063B226 /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E270ABB1E4910BC0063B226 /* IntNode.cpp */; };
 		5E4EB4D91E4BA951005B4E6F /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E4EB4D71E4BA951005B4E6F /* IntNodeArray.cpp */; };
+		5E4EB4DD1E4BB20E005B4E6F /* DataStructureController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E4EB4DB1E4BB20E005B4E6F /* DataStructureController.cpp */; };
+		5E4EB4DF1E4BB220005B4E6F /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E4EB4DE1E4BB220005B4E6F /* Runner.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +31,9 @@
 		5E270ABC1E4910BC0063B226 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = SOURCE_ROOT; };
 		5E4EB4D71E4BA951005B4E6F /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNodeArray.cpp; path = ../Model/IntNodeArray.cpp; sourceTree = "<group>"; };
 		5E4EB4D81E4BA951005B4E6F /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNodeArray.hpp; path = ../Model/IntNodeArray.hpp; sourceTree = "<group>"; };
+		5E4EB4DB1E4BB20E005B4E6F /* DataStructureController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataStructureController.cpp; path = Controller/DataStructureController.cpp; sourceTree = SOURCE_ROOT; };
+		5E4EB4DC1E4BB20E005B4E6F /* DataStructureController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DataStructureController.hpp; path = Controller/DataStructureController.hpp; sourceTree = SOURCE_ROOT; };
+		5E4EB4DE1E4BB220005B4E6F /* Runner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Runner.cpp; path = Controller/Runner.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +66,7 @@
 		5E270AAD1E4904570063B226 /* MegaData */ = {
 			isa = PBXGroup;
 			children = (
+				5E4EB4DA1E4BB1ED005B4E6F /* Controller */,
 				5E4EB4D61E4BA926005B4E6F /* Model */,
 			);
 			path = MegaData;
@@ -75,6 +81,16 @@
 				5E270ABC1E4910BC0063B226 /* IntNode.hpp */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		5E4EB4DA1E4BB1ED005B4E6F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5E4EB4DB1E4BB20E005B4E6F /* DataStructureController.cpp */,
+				5E4EB4DC1E4BB20E005B4E6F /* DataStructureController.hpp */,
+				5E4EB4DE1E4BB220005B4E6F /* Runner.cpp */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +151,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E270ABD1E4910BC0063B226 /* IntNode.cpp in Sources */,
+				5E4EB4DF1E4BB220005B4E6F /* Runner.cpp in Sources */,
+				5E4EB4DD1E4BB20E005B4E6F /* DataStructureController.cpp in Sources */,
 				5E4EB4D91E4BA951005B4E6F /* IntNodeArray.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
