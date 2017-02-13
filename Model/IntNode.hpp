@@ -18,6 +18,7 @@ public:
     //Constructor
     IntNode();
     IntNode(int value);
+    
     /*
      Creates an IntNode with a specified value and next node pointer
      */
