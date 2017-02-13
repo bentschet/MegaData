@@ -4,16 +4,16 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>20</x>
+      <x>10</x>
       <y>60</y>
-      <w>380</w>
+      <w>390</w>
       <h>230</h>
     </coordinates>
     <panel_attributes>IntNode
--
+--
 - nodeData : int
 - nodePointer : IntNode * 
--
+--
 + getNodeData() : int
 + getNodePointer() : intNode *
 + setNodeData(int value) : void
@@ -29,22 +29,54 @@
     <coordinates>
       <x>410</x>
       <y>60</y>
-      <w>380</w>
+      <w>390</w>
       <h>230</h>
     </coordinates>
-    <panel_attributes>SimpleClass</panel_attributes>
+    <panel_attributes>IntNodeArray
+--
+- size : int
+- front : IntNode *
+--
++ IntNodeArray(int size) : constructor
++ setAtIndex(int index, int value) : void
++ getFromIndex(int index) : int
++ getSize() : int</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>10</x>
+      <x>0</x>
       <y>10</y>
       <w>140</w>
       <h>30</h>
     </coordinates>
     <panel_attributes>Created by Benbo
 bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>300</y>
+      <w>390</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>Node&lt;Type&gt;
+--
+- nodeData : Type
+- nodePointer : node&lt;Type&gt; *
+--
++ Node() : constructor
++ Node(Type value) : constructor
++ Node(Type data, Node&lt;Type&gt; * pointer) : constructor
+
++ getNodeData() : Type
++ getNodePointer() : Node&lt;Type&gt; * 
++ setNodeData(Type data) : void
++ setNodePointer(Node&lt;Type&gt; * next) : void
+</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
