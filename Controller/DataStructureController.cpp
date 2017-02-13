@@ -13,14 +13,22 @@ using namespace std;
 
 DataStructureController :: DataStructureController()
 {
-    
+    wordNode = Node<string>("datboi");
+    numberNode = Node<int>();
+}
+
+void DataStructureController :: testNodes()
+{
+    cout << "the contents of the Node<string>" << endl;
+    cout << wordNode.getNodeData() << endl;
+    cout << "Here is the Node<int>" << endl;
+    cout << numberNode.getNodeData() << endl;
 }
 
 void DataStructureController :: start()
 {
-    cout << "Starting the project" << endl;
-    cout << "Switching to the array testing" << endl;
-    testIntArray();
+    cout << "Switching to the IntNodeArray testing" << endl;
+    testNodes();
     cout << "Finished testing" << endl;
     
 }
