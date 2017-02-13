@@ -24,6 +24,7 @@ private:
 public:
     DataStructureController();
     void start();
+    
 };
 
 #endif /* DataStructureController_hpp */
