@@ -38,11 +38,34 @@ Node<Type> :: Node()
 }
 
 template <class Type>
-Node<Type :: Node(Type data)
+Node<Type> :: Node(Type data)
 {
     this->nodeData = data;
     this->nodePointer = nullptr;
 }
 
+template <class Type>
+void Node<Type> :: setNodeData(Type data)
+{
+    this->nodeData = data;
+}
+
+template <class Type>
+void Node<Type> :: setNodePointer(Node<Type> * nextPointer)
+{
+    this->nodePointer = nextPointer;
+}
+
+template <class Type>
+Type Node<Type> :: getNodeData()
+{
+    return this->nodeData;
+}
+
+template <class Type>
+Node<Type * Node<Type> :: getNodePointer()
+{
+    return this->nodePointer;
+}
 
 #endif /* Node_hpp */
