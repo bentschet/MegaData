@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>10</x>
-      <y>60</y>
+      <x>50</x>
+      <y>80</y>
       <w>390</w>
       <h>230</h>
     </coordinates>
@@ -21,14 +21,16 @@
 
 + IntNode() : constructor
 + IntNode(int value) : init
-+ IntNode(int value, IntNode * nextNode): constructor</panel_attributes>
++ IntNode(int value, IntNode * nextNode): constructor
+
+bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>410</x>
-      <y>60</y>
+      <x>510</x>
+      <y>80</y>
       <w>390</w>
       <h>230</h>
     </coordinates>
@@ -40,14 +42,16 @@
 + IntNodeArray(int size) : constructor
 + setAtIndex(int index, int value) : void
 + getFromIndex(int index) : int
-+ getSize() : int</panel_attributes>
++ getSize() : int
+
+bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>0</x>
-      <y>10</y>
+      <x>10</x>
+      <y>650</y>
       <w>140</w>
       <h>30</h>
     </coordinates>
@@ -58,8 +62,8 @@ bg=gray</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>10</x>
-      <y>300</y>
+      <x>50</x>
+      <y>360</y>
       <w>390</w>
       <h>230</h>
     </coordinates>
@@ -76,7 +80,74 @@ bg=gray</panel_attributes>
 + getNodePointer() : Node&lt;Type&gt; * 
 + setNodeData(Type data) : void
 + setNodePointer(Node&lt;Type&gt; * next) : void
-</panel_attributes>
+
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>590</x>
+      <y>360</y>
+      <w>300</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>Array&lt;Type&gt;
+-
+Data Members
+
+- front : Node&lt;Type&gt; * 
+- size : int
+-
+Constructors
+
++ Array() : constructor
++ Array(int size) : constructor
+
+Methods
+
++ getSize() : int
++ setAtIndex(int index, Type value) : void
++ getFromIndex(int index) : Type
+
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>430</x>
+      <y>480</y>
+      <w>180</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=1..n</panel_attributes>
+    <additional_attributes>160.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>430</x>
+      <y>190</y>
+      <w>100</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=1..n</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>30</x>
+      <y>40</y>
+      <w>880</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>Typed Sample
+--
+bg=orange</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
