@@ -36,6 +36,7 @@
 		5E4EB4DC1E4BB20E005B4E6F /* DataStructureController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DataStructureController.hpp; path = Controller/DataStructureController.hpp; sourceTree = SOURCE_ROOT; };
 		5E4EB4DE1E4BB220005B4E6F /* Runner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Runner.cpp; path = Controller/Runner.cpp; sourceTree = SOURCE_ROOT; };
 		5EA95F651E523E6D00ABDF1D /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Node.hpp; path = Model/Node.hpp; sourceTree = SOURCE_ROOT; };
+		5EF259DD1E5CC2DF00BE6B2C /* Mega.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Mega.pdf; path = ../../../../Desktop/Mega.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +69,7 @@
 		5E270AAD1E4904570063B226 /* MegaData */ = {
 			isa = PBXGroup;
 			children = (
+				5EF259DC1E5CC2C000BE6B2C /* Resources */,
 				5E4EB4DA1E4BB1ED005B4E6F /* Controller */,
 				5E4EB4D61E4BA926005B4E6F /* Model */,
 			);
@@ -95,6 +97,14 @@
 				5E4EB4DE1E4BB220005B4E6F /* Runner.cpp */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		5EF259DC1E5CC2C000BE6B2C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5EF259DD1E5CC2DF00BE6B2C /* Mega.pdf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
