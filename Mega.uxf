@@ -89,8 +89,8 @@ bg=magenta</panel_attributes>
     <coordinates>
       <x>590</x>
       <y>340</y>
-      <w>300</w>
-      <h>260</h>
+      <w>490</w>
+      <h>400</h>
     </coordinates>
     <panel_attributes>Array&lt;Type&gt;
 -
@@ -107,8 +107,16 @@ Constructors
 Methods
 
 + getSize() : int
++ getFront() const : Node&lt;Type&gt; *
+
 + setAtIndex(int index, Type value) : void
 + getFromIndex(int index) : Type
+
+Advanced
+
++ ~Array&lt;Type&gt;() : destructor
++ Array&lt;Type&gt;(const Array&lt;Type&gt; &amp; toBeCopied) : copy constructor
+
 
 bg=pink</panel_attributes>
     <additional_attributes/>
