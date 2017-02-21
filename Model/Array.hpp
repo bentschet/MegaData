@@ -18,7 +18,11 @@ private:
 public:
     Array();
     Array(int size);
-    
+    // Destructor
+    ~Array<Type>();
+    // Copy Constructor
+    Array<Type>(const Array<Type> & toBeCopied);
+    //Helper Methods
     int getSize();
     void setAtIndex(int index, Type value);
     Type getFromIndex(int index);
@@ -78,9 +82,33 @@ Type Array<Type> :: getFromIndex(int index)
     return value;
 }
 
+//The const modifier down there means that the method doesn't do anything to the state of the object.
+
 template <class Type>
-Type Array<Type> :: getSize()
+Type Array<Type> :: getSize() const
 {
     return size;
 }
+
+template <class Type>
+Array<Type> :: ~Array()
+{
+    int count = size;
+    Node<Type> * remove = front;
+    while(front != nullptr)
+    {
+        //moves to next node in array
+        front = front->getNodePointer();
+        cout << "Moving to the next node. At: " << count << endl;
+        //deletes the front pointer
+        delete remove;
+        cout << "Deleting the old front pointer." << endl;
+        //moves delete to the new front.
+        remove = front;
+        cout << "Moving to the new front pointer." << endl;
+        count--;
+        cout << "Front is at: " << front << " count is: " << count << endl;
+    }
+}
+
 #endif /* Array_h */
