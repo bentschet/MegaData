@@ -6,8 +6,15 @@
 //  Copyright © 2017 Tschetter, Benjamin. All rights reserved.
 //
 
+
 #ifndef Array_hpp
 #define Array_hpp
+
+#include "../Model/Node.hpp"
+#include <assert.h>
+#include <iostream>
+
+using namespace std;
 
 template <class Type>
 class Array
@@ -24,16 +31,18 @@ public:
     Array<Type>(const Array<Type> & toBeCopied);
     //Helper Methods
     int getSize();
+    Node<Type> * getFront() const;
+    
     void setAtIndex(int index, Type value);
     Type getFromIndex(int index);
     
 };
 
 template <class Type>
-Array<Type :: Array()
+Array<Type> :: Array()
 {
     //never used
-    // Default constructor only supplied to avoid compilation error lol
+    //Default constructor only supplied to avoid compilation error lol
 }
 
 template <class Type>
@@ -62,7 +71,7 @@ void Array<Type> :: setAtIndex(int index, Type data)
         current = current->getNodePointer();
     }
     
-    current->setNodeData(value);
+    current->setNodeData(data);
 }
 
 template <class Type>
@@ -85,7 +94,7 @@ Type Array<Type> :: getFromIndex(int index)
 //The const modifier down there means that the method doesn't do anything to the state of the object.
 
 template <class Type>
-Type Array<Type> :: getSize() const
+Type Array<int> :: getSize() const
 {
     return size;
 }
@@ -109,6 +118,36 @@ Array<Type> :: ~Array()
         count--;
         cout << "Front is at: " << front << " count is: " << count << endl;
     }
+}
+
+template <class Type>
+Array<Type> :: Array(const Array<Type> & toBeCopied)
+{
+    this->size = toBeCopied.getSize();
+    
+    //builds data structure
+    this->front = new Node<Type>();
+    for(int index = 1; index < size; index++)
+    {
+        Node<Type> * temp = new Node<Type>();
+        temp->setNodePointer(front);
+        front = temp;
+    }
+    //Copies values into new Array.
+    Node<Type> * copyTemp = toBeCopied.getFront();
+    Node<Type> * updated = this->front;
+    for(int index = 0; index < size; index++)
+    {
+        updated->setNodeData(copyTemp->getNodeData());
+        updated = updated->getNodePointer();
+        copyTemp = copyTemp->getNodePointer();
+    }
+}
+
+template <class Type>
+Node<Type> * Array<Type> :: getFront() const
+{
+    return front;
 }
 
 #endif /* Array_h */
