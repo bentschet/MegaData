@@ -88,9 +88,9 @@ bg=magenta</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>590</x>
-      <y>320</y>
+      <y>340</y>
       <w>490</w>
-      <h>400</h>
+      <h>380</h>
     </coordinates>
     <panel_attributes>Array&lt;Type&gt;
 -
@@ -163,8 +163,8 @@ bg=orange</panel_attributes>
     <coordinates>
       <x>590</x>
       <y>730</y>
-      <w>430</w>
-      <h>260</h>
+      <w>490</w>
+      <h>310</h>
     </coordinates>
     <panel_attributes>Model :: List&lt;Type&gt;
 -
@@ -176,6 +176,8 @@ bg=orange</panel_attributes>
 + ~List&lt;Type&gt;() : destructor
 
 + addAtIndex(int index, Type value) : void
++ addFront(Type value) : void
++ addEnd(Type value) : void
 + add(Type value) : void
 + remove(int index) : Type
 + setAtIndex(int index, Type data) : Type
@@ -183,6 +185,7 @@ bg=orange</panel_attributes>
 + contains(Type data) : bool
 + getSize() const : int
 + getFront() const : Node&lt;Type&gt; *
++ getEnd() const : Node&lt;Type&gt; *
 
 bg=red</panel_attributes>
     <additional_attributes/>
@@ -197,6 +200,6 @@ bg=red</panel_attributes>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m2=0..n</panel_attributes>
-    <additional_attributes>160.0;410.0;90.0;410.0;90.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>160.0;410.0;80.0;410.0;80.0;10.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>
