@@ -11,6 +11,7 @@
 #include "../Model/IntNode.hpp"
 #include "../Model/IntNodeArray.hpp"
 #include "../Model/Node.hpp"
+
 using namespace std;
 
 DataStructureController :: DataStructureController()
@@ -76,4 +77,9 @@ void DataStructureController :: testAdvancedFeatures()
     cout << "These should match:" << endl;
     cout << words.getFromIndex(0) << " should be the same as " << copiedWords.getFromIndex(0) << endl;
     copiedWords.setAtIndex(3, "Changed the contents of the copied Array");
+}
+
+void DataStructureController :: testListIntro()
+{
+    
 }

@@ -27,10 +27,10 @@ public:
     List<Type>(const List<Type> & source);
     ~List<Type>();
     
-    
-    
     void addAtIndex(int index, Type value);
     void add(Type value);
+    void addEnd(Type value);
+    void addFront(Type value);
     Type remove(int index);
     Type setAtIndex(int index, Type data);
     bool contains(Type data);
@@ -108,6 +108,26 @@ void List<Type> :: addAtIndex(int index, Type value)
         
         size++;
     }
+}
+
+template <class Type>
+Type List<Type> :: setAtIndex(int index, Type data)
+{
+    assert(index >= 0 && index < size);
+    Type removedData;
+    
+    Node<Type> * current = front;
+    
+    for (int spot = 0; spot < index; spot++)
+    {
+        current = current->getNodePointer();
+        
+    }
+    
+    removedData = current->getNodeData();
+    current->setNodeData(data);
+    
+    return removedData;
 }
 
 template <class Type>
