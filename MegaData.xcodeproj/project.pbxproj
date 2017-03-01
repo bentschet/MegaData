@@ -27,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		5E18E80E1E675D0500847563 /* DoublyLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoublyLinkedList.hpp; sourceTree = "<group>"; };
+		5E18E80F1E67682B00847563 /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
 		5E1B990D1E54E38D00FFB912 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Array.hpp; path = Model/Array.hpp; sourceTree = SOURCE_ROOT; };
 		5E270AAB1E4904570063B226 /* MegaData */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaData; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E270ABB1E4910BC0063B226 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Model/IntNode.cpp; sourceTree = SOURCE_ROOT; };
@@ -91,6 +92,7 @@
 				5EF259DE1E5CDA0700BE6B2C /* List.hpp */,
 				5EA5FC411E64C723001D91A6 /* BiDirectionalNode.hpp */,
 				5E18E80E1E675D0500847563 /* DoublyLinkedList.hpp */,
+				5E18E80F1E67682B00847563 /* CircularList.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
