@@ -262,7 +262,9 @@ Non virtual methods
 
 Virtual methods
 + add(Type value)
-+ remove(int)</panel_attributes>
++ remove(int)
+
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
