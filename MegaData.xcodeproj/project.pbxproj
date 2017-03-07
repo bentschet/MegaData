@@ -42,6 +42,7 @@
 		5EF259DD1E5CC2DF00BE6B2C /* Mega.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Mega.pdf; path = ../../../../Desktop/Mega.pdf; sourceTree = "<group>"; };
 		5EF259DE1E5CDA0700BE6B2C /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		5EF692801E6F456B0048C44F /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
+		5EF692811E6F4B070048C44F /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +96,7 @@
 				5E18E80E1E675D0500847563 /* DoublyLinkedList.hpp */,
 				5E18E80F1E67682B00847563 /* CircularList.hpp */,
 				5EF692801E6F456B0048C44F /* Queue.hpp */,
+				5EF692811E6F4B070048C44F /* Stack.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
