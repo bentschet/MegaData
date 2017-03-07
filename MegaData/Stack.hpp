@@ -67,6 +67,7 @@ template <class Type>
 Type Stack<Type> :: peek()
 {
     assert(this->getSize() > 0);
+    return this->getEnd()->getNodeData();
     
 }
 
