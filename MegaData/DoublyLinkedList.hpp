@@ -19,7 +19,7 @@ private:
     BiDirectionalNode<Type> * end;
     int size;
 public:
-    DoublyLinkedList()
+    DoublyLinkedList();
     virtual ~DoublyLinkedList() = 0;
     
     int getSize() const;
