@@ -55,7 +55,7 @@ Array<Type> :: Array(int size)
     
     for (int index = 1; index < size; index++)
     {
-        Node<Type>() * current = new Node<Type>();
+        Node<Type> * current = new Node<Type>();
         current->setNextPointer(front);
         front = current;
     }

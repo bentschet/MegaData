@@ -9,6 +9,8 @@
 #ifndef BiDirectionalNode_h
 #define BiDirectionalNode_h
 
+#include "../Model/BiDirectionalNode.hpp"
+
 template <class Type>
 class BiDirectionalNode : public Node<Type>
 {
@@ -19,11 +21,11 @@ private:
 public:
     BiDirectionalNode();
     BiDirectionalNode(Type data);
-    BiDirectionalNode(Type data, BidirectionalNode<Type> * previous, BiDirectionalNode<Type> * next);
-}
+    BiDirectionalNode(Type data, ::BiDirectionalNode<Type> * previous, BiDirectionalNode<Type> * next);
+};
 
 template<class Type>
-BiDirectionalNode<Type> :: BiDirectionalNode() : Node()
+BiDirectionalNode<Type> :: BiDirectionalNode() : Node<Type>()
 {
     
 }
@@ -32,5 +34,19 @@ BiDirectionalNode<Type> :: BiDirectionalNode() : Node<Type>(data)
 {
     
 }
+
+template <class Type>
+BiDirectionalNode<Type> * BiDirectionalNode<Type> :: getNextPointer()
+{
+    return this->nextPointer;
+}
+
+template <class Type>
+BiDirectionalNode<Type> * BiDirectionalNode<Type> :: getPreviousPointer()
+{
+    return this->previous;
+}
+
+
 
 #endif /* BiDirectionalNode_h */
