@@ -94,7 +94,7 @@ Type Array<Type> :: getFromIndex(int index)
 //The const modifier down there means that the method doesn't do anything to the state of the object.
 
 template <class Type>
-Type Array<int> :: getSize() const
+Type Array<Type> :: getSize() const
 {
     return size;
 }
