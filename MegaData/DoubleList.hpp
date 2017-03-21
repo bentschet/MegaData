@@ -12,7 +12,7 @@
 #include "../MegaData/DoubleList.hpp"
 #include "../MegaData/DoublyLinkedList.hpp"
 #include "../Model/BiDirectionalNode.hpp"
-#include "../Model/Node.hpp"
+
 
 template <class Type>
 class DoubleList : public DoublyLinkedList<Type>
