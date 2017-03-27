@@ -58,7 +58,7 @@ void DataStructureController :: testListTiming()
         timingList.getFromIndex(randomIndex);
         doubleTimer.stopTimer();
         slowTime[index] = doubleTimer.getExecutionTimeInMicroseconds();
-        doubletimer.resetTimer();
+        doubleTimer.resetTimer();
         
         doubleTimer.startTimer();
         timingList.getFromIndexFast(randomIndex);

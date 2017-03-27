@@ -11,6 +11,7 @@
 		5E4EB4D91E4BA951005B4E6F /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E4EB4D71E4BA951005B4E6F /* IntNodeArray.cpp */; };
 		5E4EB4DD1E4BB20E005B4E6F /* DataStructureController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E4EB4DB1E4BB20E005B4E6F /* DataStructureController.cpp */; };
 		5E4EB4DF1E4BB220005B4E6F /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E4EB4DE1E4BB220005B4E6F /* Runner.cpp */; };
+		5EF4C14F1E899A6500BE9BAE /* FoodItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5EF4C14E1E899A6500BE9BAE /* FoodItem.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +43,8 @@
 		5EE971311E71D7F2003D28A1 /* DoubleList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleList.hpp; sourceTree = "<group>"; };
 		5EF259DD1E5CC2DF00BE6B2C /* Mega.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Mega.pdf; path = ../../../../Desktop/Mega.pdf; sourceTree = "<group>"; };
 		5EF259DE1E5CDA0700BE6B2C /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
+		5EF4C14D1E89995D00BE9BAE /* FoodItem.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FoodItem.hpp; sourceTree = "<group>"; };
+		5EF4C14E1E899A6500BE9BAE /* FoodItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FoodItem.cpp; sourceTree = "<group>"; };
 		5EF692801E6F456B0048C44F /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		5EF692811E6F4B070048C44F /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +102,8 @@
 				5EF692801E6F456B0048C44F /* Queue.hpp */,
 				5EF692811E6F4B070048C44F /* Stack.hpp */,
 				5EE971311E71D7F2003D28A1 /* DoubleList.hpp */,
+				5EF4C14D1E89995D00BE9BAE /* FoodItem.hpp */,
+				5EF4C14E1E899A6500BE9BAE /* FoodItem.cpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 				5E4EB4DF1E4BB220005B4E6F /* Runner.cpp in Sources */,
 				5E4EB4DD1E4BB20E005B4E6F /* DataStructureController.cpp in Sources */,
 				5E4EB4D91E4BA951005B4E6F /* IntNodeArray.cpp in Sources */,
+				5EF4C14F1E899A6500BE9BAE /* FoodItem.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
