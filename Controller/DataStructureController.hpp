@@ -14,6 +14,9 @@
 #include "../MegaData/DoubleList.hpp"
 #include "../MegaData/CircularList.hpp"
 #include <string>
+#include <fstream>
+#include <sstream>
+#include <iostream>
 
 
 using namespace std;
@@ -35,6 +38,7 @@ public:
     void start();
     
 };
+
 
 void DataStructureController :: testListTiming()
 {
@@ -77,5 +81,6 @@ void DataStructureController :: testListTiming()
     cout << "The average speed for the getFromIndex method was: " << averageSlow << " microseconds." << endl;
     cout << "The average speed for the getFromIndexFast method was: " << averageFast << " microseconds." << endl;
 }
+
 
 #endif /* DataStructureController_hpp */
