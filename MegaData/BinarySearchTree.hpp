@@ -51,6 +51,69 @@ BinarySearchTree<Type> :: BinarySearchTree() : Tree<Type>()
     }
     
 template <class Type>
+void BinarySearchTree<Type> :: inOrderTraversal()
+    {
+        inOrderTraversal(root);
+    }
+                 
+template <class Type>
+void BinarySearchTree<Type> :: preOrderTraversal()
+    {
+        preOrderTraversal(root);
+    }
+            
+template <class Type>
+void BinarySearchTree<Type :: postOrderTraversal()
+    {
+        postOrderTraversal(root);
+    }
+             
+template <class Type>
+void BinarySearchTree<Type> :: inOrderTraversal(BinarySearchTreeNode<Type> * inStart)
+    {
+        if(inStart != nullptr)
+        {
+            inOrderTraversal(inStart->getLeftChild());
+            cout << "Node Contents: " << inStart->getNodeData() << endl;
+        }
+    }
+    
+template <class Type>
+void BinarySearchTree<Type> :: preOrderTraversal(BinarySearchTreeNode<Type> * preStart)
+    {
+        if(preStart != nullptr)
+        {
+            cout << "Node contains: " << preStart->getNodeData() << endl;
+            preOrderTraversal(preStart->getLeftChild());
+            preOrderTraversal(preStart->getRightChild());
+        }
+    }
+                 
+template <class Type>
+void BinarySearchTree<Type> :: postOrderTraversal(BinarySearchTreeNode<Type> * postStart)
+    {
+        if(postStart != nullptr)
+        {
+            cout << "Node contains: " << postStart->getNodeData() << endl;
+            postOrderTraversal(preStart->getLeftChild());
+            postOrderTraversal(preStart->getRightChild());
+        }
+    }
+                 
+template <class Type>
+void BinarySearchTree<Type> :: inOrderTraversal(BinarySearchTreeNode<Type> * inStart)
+    {
+        if(inStart != nullptr)
+        {
+            cout << "Node contains: " << inStart->getNodeData() << endl;
+            inOrderTraversal(preStart->getLeftChild());
+            inOrderTraversal(preStart->getRightChild());
+        }
+    }
+
+
+                 
+template <class Type>
 void BinarySearchTree<Type :: remove(Type getRidOfMe)
     {
         if(root == nullptr)
