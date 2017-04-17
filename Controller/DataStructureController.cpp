@@ -11,6 +11,8 @@
 #include "../Model/IntNode.hpp"
 #include "../Model/IntNodeArray.hpp"
 #include "../Model/Node.hpp"
+#include "../Model/Array.hpp"
+#include "../Model/FileController.hpp"
 
 using namespace std;
 
