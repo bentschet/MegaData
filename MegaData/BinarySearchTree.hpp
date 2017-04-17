@@ -78,6 +78,30 @@ void BinarySearchTree<Type :: postOrderTraversal()
 {
     postOrderTraversal(root);
 }
+                 
+template <class Type>
+int BinarySearchTree<Type> :: getSize()
+{
+    return calculateSize(root);
+}
+                 
+template <class Type>
+int BinarySearchTree<Type> :: getHeight()
+{
+    return calculateHeight(root);
+}
+                 
+template <class Type>
+int BinarySearchTree<Type> :: isBalanced()
+{
+    return isBalanced(root);
+}
+                 
+template <class Type>
+int BinarySearchTree<Type> :: isComplete()
+{
+    return isComplete(root);
+}
              
 template <class Type>
 void BinarySearchTree<Type> :: inOrderTraversal(BinarySearchTreeNode<Type> * inStart)
@@ -303,48 +327,102 @@ bool BinarySearchTree<Type> :: contains(Type itemToFind)
                  
 template <class Type>
 void BinarySearchTree<Type> :: insert(Type itemToInsert)
-    {
-        BinarySearchTreeNode<Type> * insertMe = new BinarySearchTreeNode<Type>(itemToInsert);
-        BinarySearchTreeNode<Type> * previous = nullptr;
-        BinarySearchTreeNode<Type> * current = root;
+{
+    BinarySearchTreeNode<Type> * insertMe = new BinarySearchTreeNode<Type>(itemToInsert);
+    BinarySearchTreeNode<Type> * previous = nullptr;
+    BinarySearchTreeNode<Type> * current = root;
         
-        if(current == nullptr)
+    if(current == nullptr)
+    {
+        root = insertMe;
+    }
+    else
+    {
+        while(current != nullptr)
         {
-            root = insertMe;
-        }
-        else
-        {
-            while(current != nullptr)
+            previous = current;
+            if(itemToInsert < current->getNodeData())
             {
-                previous = current;
-                if(itemToInsert < current->getNodeData())
-                {
-                    current = current->getLeftchild();
-                }
-                else if(itemToInsert > current->getNodeData())
-                {
-                    current = current->getRightChild();
-                }
-                else
-                {
-                    cerr << "Item exists already - Exiting" << endl;
-                    delete insertMe;
-                    return;
-                }
+                current = current->getLeftchild();
             }
-            
-            if (previous->getNodeData() > itemToInsert)
+            else if(itemToInsert > current->getNodeData())
             {
-                previous->setLeftChild(insertMe);
+                current = current->getRightChild();
             }
             else
             {
-                previous->setRightChild(insertMe);
+                cerr << "Item exists already - Exiting" << endl;
+                delete insertMe;
+                return;
             }
-            insertMe->setRootPointer(previous);
         }
+            
+        if (previous->getNodeData() > itemToInsert)
+        {
+            previous->setLeftChild(insertMe);
+        }
+        else
+        {
+            previous->setRightChild(insertMe);
+        }
+        insertMe->setRootPointer(previous);
     }
+}
+        
+template <class Type>
+int BinarySearchTree<Type> :: calculateSize(BinarySearchTreeNode<Type> * start)
+{
+    int count = 1;
+    if(start == nullptr)
+    {
+        return 0;
+    }
+    else
+    {
+        count += calcluateSize(start->getLeftChild());
+        count += calculateSize(start->getRightChild());
+        return count;
+    }
+}
+        
+template <class Type>
+int BinarySearchTree<Type> :: CalculateHeight(BinarySearchTreeNode<Type> * start)
+{
+    if(start == nullptr)
+    {
+        return 0;
+    }
+    else
+    {
+        return 1 + max(calculateHeight(start->getLeftChild()), calculateHeight(start->getRightChild()));
+    }
+}
 
+template <class Type>
+bool BinarySearchTree<Type> :: isBalanced(BinarySearchTreeNode<Type> * start)
+{
+    int leftHeight = 0;
+    int rightHeight = 0;
+    
+    if(start == nullptr)
+    {
+        return true;
+    }
+    
+    leftHeight = calculateHeight(start->getLeftChild());
+    rightHeight = calculateHeight(start->getRightChild());
+            
+    int heightDifference = abs(leftHeight-rightHeight);
+    bool leftBalanced = isBalanced(start->getLeftChild());
+    bool rightBalanced = isBlanced(start->getRightChild());
+            
+    if(heightDifference <= 1 && leftBalanced && rightBalanced)
+    {
+        return true;
+    }
+            
+    return false;
+}
 
 
 #endif /* BinarySearchTree_h */
