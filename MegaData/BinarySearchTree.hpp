@@ -80,6 +80,23 @@ void BinarySearchTree<Type :: postOrderTraversal()
 }
                  
 template <class Type>
+                 bool BinarySearchTree<Type> :: isComplete(BinarySearchTreeNode<Type> * start, int index, int size)
+                 {
+                     if(start == nullptr)
+                     {
+                         return true
+                     }
+                     
+                     if(index >= size)
+                     {
+                         return false;
+                     }
+                     
+                     return (isComplete(start->getLeftChild(), 2 * index + 1, size) && isComplete(start->getRightChild(), 2 * index + 2, size));
+                         
+                 }
+                 
+template <class Type>
 int BinarySearchTree<Type> :: getSize()
 {
     return calculateSize(root);
@@ -98,9 +115,12 @@ int BinarySearchTree<Type> :: isBalanced()
 }
                  
 template <class Type>
-int BinarySearchTree<Type> :: isComplete()
+bool BinarySearchTree<Type> :: isComplete()
 {
-    return isComplete(root);
+    int index = 0;
+    int size = getSzie();
+    
+    return isComplete(root, index, size);
 }
              
 template <class Type>

@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>42</x>
+      <x>63</x>
       <y>28</y>
       <w>273</w>
       <h>161</h>
@@ -29,7 +29,7 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>364</x>
+      <x>385</x>
       <y>28</y>
       <w>273</w>
       <h>161</h>
@@ -50,7 +50,7 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>203</x>
+      <x>224</x>
       <y>623</y>
       <w>98</w>
       <h>21</h>
@@ -62,7 +62,7 @@ bg=gray</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>42</x>
+      <x>63</x>
       <y>224</y>
       <w>273</w>
       <h>161</h>
@@ -87,7 +87,7 @@ bg=magenta</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>420</x>
+      <x>441</x>
       <y>238</y>
       <w>343</w>
       <h>266</h>
@@ -124,7 +124,7 @@ bg=pink</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>308</x>
+      <x>329</x>
       <y>308</y>
       <w>126</w>
       <h>28</h>
@@ -136,7 +136,7 @@ m2=1..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>308</x>
+      <x>329</x>
       <y>105</y>
       <w>70</w>
       <h>28</h>
@@ -148,7 +148,7 @@ m2=1..n</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>28</x>
+      <x>49</x>
       <y>0</y>
       <w>616</w>
       <h>203</h>
@@ -161,7 +161,7 @@ bg=orange</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>420</x>
+      <x>441</x>
       <y>511</y>
       <w>343</w>
       <h>217</h>
@@ -193,7 +193,7 @@ bg=red</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>308</x>
+      <x>329</x>
       <y>343</y>
       <w>126</w>
       <h>301</h>
@@ -205,7 +205,7 @@ m2=0..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>7</x>
+      <x>28</x>
       <y>434</y>
       <w>308</w>
       <h>182</h>
@@ -233,7 +233,7 @@ m2=0..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>182</x>
+      <x>203</x>
       <y>378</y>
       <w>21</w>
       <h>70</h>
@@ -244,7 +244,7 @@ m2=0..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>119</x>
+      <x>140</x>
       <y>749</y>
       <w>273</w>
       <h>168</h>
@@ -270,7 +270,7 @@ Virtual methods
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>182</x>
+      <x>203</x>
       <y>609</y>
       <w>98</w>
       <h>154</h>
@@ -282,7 +282,7 @@ Virtual methods
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>56</x>
+      <x>77</x>
       <y>1022</y>
       <w>70</w>
       <h>21</h>
@@ -293,7 +293,7 @@ Virtual methods
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>196</x>
+      <x>217</x>
       <y>1022</y>
       <w>140</w>
       <h>119</h>
@@ -309,7 +309,7 @@ remove(int index) : Type</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>413</x>
+      <x>434</x>
       <y>1022</y>
       <w>224</w>
       <h>119</h>
@@ -326,7 +326,7 @@ remove(int index) : Type</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>84</x>
+      <x>105</x>
       <y>910</y>
       <w>196</w>
       <h>126</h>
@@ -337,7 +337,7 @@ remove(int index) : Type</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>259</x>
+      <x>280</x>
       <y>910</y>
       <w>21</w>
       <h>133</h>
@@ -348,7 +348,7 @@ remove(int index) : Type</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>259</x>
+      <x>280</x>
       <y>910</y>
       <w>224</w>
       <h>126</h>
