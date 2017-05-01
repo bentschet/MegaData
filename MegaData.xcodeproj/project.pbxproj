@@ -29,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5E0CC7011EB7B28800815A7B /* HashTable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HashTable.hpp; sourceTree = "<group>"; };
+		5E0CC7041EB7B4FA00815A7B /* HashNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HashNode.hpp; sourceTree = "<group>"; };
 		5E18E80E1E675D0500847563 /* DoublyLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoublyLinkedList.hpp; sourceTree = "<group>"; };
 		5E18E80F1E67682B00847563 /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
 		5E1B990D1E54E38D00FFB912 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Array.hpp; path = Model/Array.hpp; sourceTree = SOURCE_ROOT; };
@@ -70,6 +72,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E0CC7031EB7B29500815A7B /* Non-Linear Structures */ = {
+			isa = PBXGroup;
+			children = (
+				5E0CC7011EB7B28800815A7B /* HashTable.hpp */,
+				5E0CC7041EB7B4FA00815A7B /* HashNode.hpp */,
+			);
+			name = "Non-Linear Structures";
+			sourceTree = "<group>";
+		};
 		5E270AA21E4904570063B226 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +110,7 @@
 		5E4EB4D61E4BA926005B4E6F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5E0CC7031EB7B29500815A7B /* Non-Linear Structures */,
 				5EB6DE161E9FF05900062954 /* Trees */,
 				5E62BB541E8C2B90009022BD /* Items */,
 				5E4EB4D71E4BA951005B4E6F /* IntNodeArray.cpp */,
