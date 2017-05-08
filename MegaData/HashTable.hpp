@@ -216,4 +216,10 @@ void HashTable<Type> :: add(Type data)
         hashTableStorage[updatedPosition] = temp;
     }
 }
+
+template <class Type>
+long HashTable<Type> :: nextPrime()
+{
+    
+}
 #endif /* HashTable_h */
