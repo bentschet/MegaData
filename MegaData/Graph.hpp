@@ -60,4 +60,56 @@ int Graph<Type> :: size() const
 {
     return vertexCount;
 }
+
+template <class Type>
+void Graph<Type> :: addVertex(const Type& value)
+{
+    assert(size() < MAXIMUM);
+    int newVertexNumber = vertexCount;
+    vertexCount++;
+    
+    for(int otherVertexNumber = 0; otherVertexNumber < vertexCount; otherVertexNumber++)
+    {
+        adjacencyMatrix[otherVertexNumber][newVertexNumber] = false;
+        adjacencyMatrix[newVertexNumber][otherVertexNumber] = false;
+    }
+    
+    graphData[newVertexNumber] = value;
+}
+
+template <class Type>
+void Graph<Type> :: hasUndirectedConnection(int source, int target) const
+{
+    assert(source < size() && target < size());
+    
+    bool isAnEdge = false;
+    isAnEdge = adjacencyMatrix[source][target] || adjacencyMatrix[target][sourcce];
+    
+    return isAnEdge;
+}
+
+template <class Type>
+bool Graph<Type> :: areConnected(int source, int target) const
+{
+    assert(source < size() && target < size());
+    
+    bool isAnEdge = false;
+    isAnEdge = adjacencyMatrix[source][target];
+    
+    return isAnEdge;
+}
+
+template <class Type>
+Type & Graph<Type> :: operator[](int vertex)
+{
+    assert(vertex < size());
+    return graphData[vertex];
+}
+
+template <class Type>
+Type Graph<Type> :: operator[](int vertex) const
+{
+    assert(vertex < size());
+    return graphData[vertex];
+}
 #endif /* Graph_h */
