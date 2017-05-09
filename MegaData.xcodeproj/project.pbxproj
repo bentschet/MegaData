@@ -34,6 +34,7 @@
 		5E18E80E1E675D0500847563 /* DoublyLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoublyLinkedList.hpp; sourceTree = "<group>"; };
 		5E18E80F1E67682B00847563 /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
 		5E1B990D1E54E38D00FFB912 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Array.hpp; path = Model/Array.hpp; sourceTree = SOURCE_ROOT; };
+		5E1BF31E1EC234CA003F6FA1 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
 		5E270AAB1E4904570063B226 /* MegaData */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaData; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E270ABB1E4910BC0063B226 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Model/IntNode.cpp; sourceTree = SOURCE_ROOT; };
 		5E270ABC1E4910BC0063B226 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = SOURCE_ROOT; };
@@ -77,6 +78,7 @@
 			children = (
 				5E0CC7011EB7B28800815A7B /* HashTable.hpp */,
 				5E0CC7041EB7B4FA00815A7B /* HashNode.hpp */,
+				5E1BF31E1EC234CA003F6FA1 /* Graph.hpp */,
 			);
 			name = "Non-Linear Structures";
 			sourceTree = "<group>";
